@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Image, Text, Vibration} from 'react-native';
-import colors from '../../../../../res/colors';
-import images from '../../../../../res/images';
+import colors from '../../../../res/colors';
+import images from '../../../../res/images';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function MessageListItem({data}) {
