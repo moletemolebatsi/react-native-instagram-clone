@@ -1,33 +1,21 @@
 import React from 'react';
 import {StatusBar, View, Text, StyleSheet, CameraRoll} from 'react-native';
-import {RNCamera} from 'react-native-camera';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function StoryCamera() {
   //StatusBar.setHidden(false);
 
-  const takePicture = async function (camera) {
-    const options = {quality: 0.5, base64: true};
-    const data = await camera.takePictureAsync(options);
-    //  eslint-disable-next-line
-    console.log(data.uri);
-  };
+  
 
   return (
-    <RNCamera
-      style={Styles.cameraContainer}
-      type={RNCamera.Constants.Type.back}
-      flashMode={RNCamera.Constants.FlashMode.on}>
-      {({camera}) => {
-        return (
-          <View style={Styles.captureCircle}>
-            <TouchableOpacity onPress={() => takePicture(camera)}>
-              <View style={Styles.captureButton}></View>
-            </TouchableOpacity>
-          </View>
-        );
-      }}
-    </RNCamera>
+    <View
+      style={{
+        marginStart: 15,
+        marginEnd: 15,
+        flexDirection: 'column',
+        marginTop: 10,
+      }}>
+      </View>
   );
 }
 
