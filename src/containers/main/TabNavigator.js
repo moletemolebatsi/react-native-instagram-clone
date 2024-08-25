@@ -1,9 +1,9 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import images from 'res/images';
+import images from '../../res/images';
 import {Image, StatusBar} from 'react-native';
-import palette from 'res/palette';
-import colors from 'res/colors';
+import palette from '../../res/palette';
+import colors from '../../res/colors';
 
 import homeNavigator from './home/homeNavigator';
 import activityNavigator from './activity/activityNavigator';
