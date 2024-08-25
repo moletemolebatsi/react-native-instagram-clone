@@ -10,8 +10,8 @@ import {
   Image,
   StatusBar,
 } from 'react-native';
-import palette from 'res/palette';
-import images from 'res/images';
+import palette from '../../../res/palette';
+import images from '../../../res/images';
 import colors from '../../../res/colors';
 import DirectMessageScreen from './DirectMessage/DirectMessageScreen';
 
