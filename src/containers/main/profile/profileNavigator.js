@@ -3,8 +3,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import profileScreen from './profileScreen';
 import {Text, View, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import colors from 'res/colors';
-import images from 'res/images';
+import colors from '../../../res/colors';
+import images from '../../../res/images';
 
 export default function profileNavigator() {
   const Stack = createStackNavigator();
