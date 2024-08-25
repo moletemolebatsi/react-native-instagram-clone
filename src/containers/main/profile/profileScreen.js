@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import palette from 'res/palette';
+import palette from '../../../res/palette';
 import ProfileHeader from './ProfileHeader';
 import {ScrollView, FlatList} from 'react-native-gesture-handler';
 import UserBio from './UserBio';
