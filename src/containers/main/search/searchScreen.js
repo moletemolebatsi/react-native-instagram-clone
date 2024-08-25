@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TextInputComponent} from 'react-native';
-import palette from 'res/palette';
+import palette from '../../../res/palette';
 import {WebView} from 'react-native-webview';
 import {RNCamera} from 'react-native-camera';
 import SearchGrid from './SearchGrid';
