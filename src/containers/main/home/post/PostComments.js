@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
-import colors from 'res/colors';
+import colors from '../../../../res/colors';
 
 export default function PostComments({post}) {
   return (
