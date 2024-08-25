@@ -1,6 +1,6 @@
 import React from 'react';
 import {ScrollView, View, Text} from 'react-native';
-import colors from 'res/colors';
+import colors from '../../../res/colors';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
 const data = [
