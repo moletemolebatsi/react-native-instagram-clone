@@ -4,7 +4,7 @@ import Post from './post/Post';
 import colors from '../../../res/colors';
 import {Text} from 'react-native';
 import {Image} from 'react-native';
-import images from 'res/images';
+import images from '../../../res/images';
 import StoryContainer from './story/StoryContainer';
 
 export default function homeScreen({navigation}) {
