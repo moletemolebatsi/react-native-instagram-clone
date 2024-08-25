@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Image, View, StyleSheet} from 'react-native';
-import images from 'res/images';
+import images from '../../../../res/images';
 
 function tapToLike(likeIcon) {
   if (likeIcon % 2 === 0) {
