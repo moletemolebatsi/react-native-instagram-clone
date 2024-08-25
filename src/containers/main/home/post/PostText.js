@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, StyleSheet, Vibration} from 'react-native';
-import colors from 'res/colors';
+import colors from '../../../../res/colors';
 
 export default function PostText({post}) {
   return (
