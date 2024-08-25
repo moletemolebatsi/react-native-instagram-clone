@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, View} from 'react-native';
-import images from 'res/images';
+import images from '../../../res/images';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function GridIcon() {
