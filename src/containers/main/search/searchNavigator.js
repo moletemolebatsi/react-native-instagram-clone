@@ -4,7 +4,6 @@ import searchScreen from './searchScreen';
 import {View, Text, Dimensions} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import colors from '../../../res/colors';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 export default function searchNavigator() {
   const Stack = createStackNavigator();
