@@ -21,9 +21,7 @@ StatusBar.setBarStyle('light-content');
 export default function AppNavigator() {
   const [validate, setValidate] = React.useState(false); //giriş yapılınca geri geri gelmeyi deaktif etmek için kullandık
   function LoginScreen() {
-    const _signInAsync = async () => {
-      setValidate(true);
-    };
+    
     return (
       <View style={Styles.container}>
         <Text style={Styles.userNameInput}>Hello1!</Text>
