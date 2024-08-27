@@ -134,6 +134,7 @@ const Styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     backgroundColor: '#000',
+    padding: 20
   },
   logoContainer: {
     alignItems: 'center',
@@ -156,6 +157,11 @@ const Styles = StyleSheet.create({
   userNameInput: {
     marginStart: 10,
     color: 'white',
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    padding: 10,
+    marginBottom: 20
   },
   passwordContainer: {
     borderColor: '#262626',
