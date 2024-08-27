@@ -1,15 +1,13 @@
 import {
   View,
-  Text,
-  TextInput,
-  TouchableOpacity,
+  
   StyleSheet,
   Image,
 } from 'react-native';
 import React from 'react';
 import images from '../../res/images';
 
-export default function LoginScreen({_signInAsync}) {
+export default function LoginScreen() {
   return (
     <View style={Styles.container}>
       <Text style={Styles.forgotPasswordText}>Hello!</Text>
