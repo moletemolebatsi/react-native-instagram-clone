@@ -109,18 +109,10 @@ export default function AppNavigator() {
   return validate ? (
     <MainNavigator />
   ) : (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="Login"
-        component={LoginScreen}
-        options={{
-          headerStyle: {backgroundColor: '#000'},
-          headerTintColor: '#fff',
-          headerTransparent: true,
-          title: '',
-        }}
-      />
-    </Stack.Navigator>
+    <View style={Styles.container}>
+
+    </View>
+    
   );
 }
 
