@@ -1,6 +1,6 @@
 import React, {lazy} from 'react';
 import {View, Text, Image} from 'react-native';
-import images from 'res/images';
+import images from '../../res/images';
 import {createStackNavigator} from '@react-navigation/stack';
 import TabNavigator from './TabNavigator';
 import StoryCamera from './home/StoryCamera/StoryCamera';
