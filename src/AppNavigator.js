@@ -26,18 +26,18 @@ export default function AppNavigator() {
     };
     return (
       <View style={Styles.container}>
-        <Text>Hello1!</Text>
+        <Text style={Styles.userNameInput}>Hello1!</Text>
       </View>
     );
   }
   const Stack = createStackNavigator();
   return validate ? (
     <View style={Styles.container}>
-        <Text>Hello2!</Text>
+        <Text style={Styles.userNameInput}>Hello2!</Text>
       </View>
   ) : (
     <View style={Styles.container}>
-        <Text>Hello3!</Text>
+        <Text style={Styles.userNameInput} >Hello3!</Text>
       </View>
     
   );
