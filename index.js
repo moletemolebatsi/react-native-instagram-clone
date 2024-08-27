@@ -5,7 +5,7 @@ import AppNavigator from './src/AppNavigator';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 
-function Root() {
+export default function Root() {
   return <App />;
 }
 
