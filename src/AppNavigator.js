@@ -36,9 +36,18 @@ export default function AppNavigator() {
         <Text style={Styles.userNameInput}>Hello2!</Text>
       </View>
   ) : (
-    <View style={Styles.container}>
-        <Text style={Styles.userNameInput} >Hello3!</Text>
-      </View>
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{
+          headerStyle: {backgroundColor: '#000'},
+          headerTintColor: '#fff',
+          headerTransparent: true,
+          title: '',
+        }}
+      />
+    </Stack.Navigator>
     
   );
 }
