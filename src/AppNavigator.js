@@ -113,20 +113,18 @@ export default function AppNavigator() {
   ) : (
     <View style={Styles.container}>
 
-
+<View style={Styles.logoContainer}>
+          <Image source={images.logo} style={{height: 70, width: 200}} />
+        </View>
   
       <TextInput
         style={styles.input}
         placeholder="Email"
-        value={email}
-        onChangeText={(text) => setEmail(text)}
-      />
+          />
       <TextInput
         style={styles.input}
         placeholder="Password"
-        value={password}
-        onChangeText={(text) => setPassword(text)}
-        secureTextEntry
+        
       />
       <Button title="Login" onPress={handleLogin} />
       <View style={styles.socialLoginContainer}>
