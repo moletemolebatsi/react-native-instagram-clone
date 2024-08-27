@@ -7,8 +7,7 @@ import {
   TextInput,
   StyleSheet,
   Image,
-  StatusBar,
-  TouchableOpacity
+  StatusBar
 } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import palette from './res/palette';
