@@ -116,11 +116,11 @@ export default function AppNavigator() {
         </View>
   
       <TextInput
-        style={styles.input}
+        style={Styles.userNameInput}
         placeholder="Email"
           />
       <TextInput
-        style={styles.input}
+        style={Styles.userNameInput}
         placeholder="Password"
         
       />
