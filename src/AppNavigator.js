@@ -26,26 +26,20 @@ export default function AppNavigator() {
     };
     return (
       <View style={Styles.container}>
-        <Text>Hello!</Text>
+        <Text>Hello1!</Text>
       </View>
     );
   }
   const Stack = createStackNavigator();
   return validate ? (
-    <MainNavigator />
+    <View style={Styles.container}>
+        <Text>Hello2!</Text>
+      </View>
   ) : (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="Login"
-        component={LoginScreen}
-        options={{
-          headerStyle: {backgroundColor: '#000'},
-          headerTintColor: '#fff',
-          headerTransparent: true,
-          title: '',
-        }}
-      />
-    </Stack.Navigator>
+    <View style={Styles.container}>
+        <Text>Hello3!</Text>
+      </View>
+    
   );
 }
 
