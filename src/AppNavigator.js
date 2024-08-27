@@ -23,93 +23,7 @@ export default function AppNavigator() {
   function LoginScreen() {
     
     return (
-          <View style={Styles.container}>
-        <View style={Styles.logoContainer}>
-          <Image source={images.logo} style={{height: 70, width: 200}} />
-        </View>
-        <View style={Styles.userNameContainer}>
-          <TextInput
-            style={Styles.userNameInput}
-            placeholder="Phone number, username or email"
-            placeholderTextColor={colors.textFaded2}
-          />
-        </View>
-        <View style={Styles.passwordContainer}>
-          <TextInput
-            secureTextEntry={true}
-            style={Styles.passwordInput}
-            placeholder="Password"
-            placeholderTextColor={colors.textFaded2}
-          />
-        </View>
-        <View style={Styles.forgotPasswordContainer}>
-          <TouchableOpacity>
-            <Text style={Styles.forgotPasswordText}>Forgot password?</Text>
-          </TouchableOpacity>
-        </View>
-        <TouchableOpacity style={Styles.loginContainer} onPress={_signInAsync}>
-          <Text style={Styles.loginText}>Log In</Text>
-        </TouchableOpacity>
-        <View
-          style={{
-            //flex: 0.1,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginTop: 30,
-          }}>
-          <View style={{flex: 1, height: 1, backgroundColor: '#262626'}}></View>
-          <Text style={{marginLeft: 40, marginRight: 40, color: '#969696'}}>
-            OR
-          </Text>
-          <View
-            style={{
-              flex: 1,
-              height: 1,
-              backgroundColor: '#262626',
-            }}></View>
-        </View>
-        <View
-          style={{
-            marginTop: 40,
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <Image source={images.facebookLogo} style={{width: 20, height: 20}} />
-          <TouchableOpacity style={{alignItems: 'center', marginStart: 10}}>
-            <Text style={{color: '#008bef'}}>Log In With Facebook</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 50}}>
-          <View
-            style={{
-              flex: 1,
-              backgroundColor: '#262626',
-              height: 1,
-            }}></View>
-        </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
-            marginTop: 20,
-          }}>
-          <Text style={{color: '#969696'}}>Don't have an account ?</Text>
-          <TouchableOpacity>
-            <Text style={{color: '#008bef'}}> Sign Up.</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    );
-  }
-  const Stack = createStackNavigator();
-  return validate ? (
-    <View style={Styles.container}>
-        <Text style={Styles.userNameInput}>Hello2!</Text>
-      </View>
-  ) : (
-    <Stack.Navigator>
+<Stack.Navigator>
       <Stack.Screen
         name="Login"
         component={LoginScreen}
@@ -121,8 +35,9 @@ export default function AppNavigator() {
         }}
       />
     </Stack.Navigator>
-    
-  );
+    );
+  }
+  
 }
 
 const Styles = StyleSheet.create({
