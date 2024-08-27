@@ -144,8 +144,7 @@ export default function AppNavigator() {
 
 
 
-  );
-}
+  
 
 const Styles = StyleSheet.create({
   container: {
