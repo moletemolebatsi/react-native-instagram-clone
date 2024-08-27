@@ -150,34 +150,34 @@ const Styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000',
+    backgroundColor: '#000'
   },
   logoContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    alignContent: 'center',
+    alignContent: 'center'
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 20
   },
   input: {
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,
     padding: 10,
-    marginBottom: 20,
+    marginBottom: 20
   },
   socialLoginContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 20,
+    marginTop: 20
   },
   socialLoginButton: {
     backgroundColor: '#007bff',
     padding: 10,
-    borderRadius: 10,
+    borderRadius: 10
   },
   userNameContainer: {
     borderColor: '#262626',
@@ -190,11 +190,11 @@ const Styles = StyleSheet.create({
     marginStart: 20,
     marginEnd: 20,
     marginTop: 20,
-    marginBottom: 20,
+    marginBottom: 20
   },
   userNameInput: {
     marginStart: 10,
-    color: 'white',
+    color: 'white'
   },
   passwordContainer: {
     borderColor: '#262626',
@@ -206,15 +206,15 @@ const Styles = StyleSheet.create({
     marginStart: 20,
     marginEnd: 20,
     backgroundColor: colors.loginInputBackground,
-    marginBottom: 20,
+    marginBottom: 20
   },
   passwordInput: {marginStart: 10, color: 'white'},
   forgotPasswordContainer: {
     alignItems: 'flex-end',
-    marginEnd: 20,
+    marginEnd: 20
   },
   forgotPasswordText: {
-    color: '#0088f8',
+    color: '#0088f8'
   },
   loginContainer: {
     alignItems: 'center',
@@ -224,10 +224,10 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
     marginStart: 20,
     marginEnd: 20,
-    borderRadius: 5,
+    borderRadius: 5
   },
   loginText: {
-    color: '#fff',
+    color: '#fff'
   },
 });
   
