@@ -109,18 +109,23 @@ export default function AppNavigator() {
   return validate ? (
     <MainNavigator />
   ) : (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="Login"
-        component={LoginScreen}
-        options={{
-          headerStyle: {backgroundColor: '#000'},
-          headerTintColor: '#fff',
-          headerTransparent: true,
-          title: '',
-        }}
+    <View style={Styles.container}>
+
+<View style={Styles.logoContainer}>
+          <Image source={images.logo} style={{height: 70, width: 200}} />
+        </View>
+  
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+          />
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        
       />
-    </Stack.Navigator>
+      <Button title="Login" onPress={handleLogin} />
+      </View>
   );
 }
 
