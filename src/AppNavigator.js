@@ -9,11 +9,11 @@ import {
   Image,
   StatusBar,
 } from 'react-native';
-import palette from 'res/palette';
+import palette from './res/palette';
 import TabNavigator from './containers/main/TabNavigator';
 import MainNavigator from './containers/main/MainNavigator';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import images from 'res/images';
+import images from './res/images';
 import colors from './res/colors';
 
 StatusBar.setBarStyle('light-content');
