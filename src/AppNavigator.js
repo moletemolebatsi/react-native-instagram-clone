@@ -7,14 +7,13 @@ import {
   TextInput,
   StyleSheet,
   Image,
-  StatusBar
+  StatusBar,
 } from 'react-native';
-import { FontAwesome5 } from '@expo/vector-icons';
-import palette from './res/palette';
+import palette from 'res/palette';
 import TabNavigator from './containers/main/TabNavigator';
 import MainNavigator from './containers/main/MainNavigator';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import images from './res/images';
+import images from 'res/images';
 import colors from './res/colors';
 
 StatusBar.setBarStyle('light-content');
@@ -110,74 +109,31 @@ export default function AppNavigator() {
   return validate ? (
     <MainNavigator />
   ) : (
-    <View style={Styles.container}>
-
-<View style={Styles.logoContainer}>
-          <Image source={images.logo} style={{height: 70, width: 200}} />
-        </View>
-  
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-          />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{
+          headerStyle: {backgroundColor: '#000'},
+          headerTintColor: '#fff',
+          headerTransparent: true,
+          title: '',
+        }}
       />
-      <Button title="Login" onPress={handleLogin} />
-      <View style={styles.socialLoginContainer}>
-        <TouchableOpacity style={styles.socialLoginButton}>
-          <FontAwesome5 name="facebook" size={24} color="#fff" />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.socialLoginButton}>
-          <FontAwesome5 name="google" size={24} color="#fff" />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.socialLoginButton}>
-          <FontAwesome5 name="twitter" size={24} color="#fff" />
-        </TouchableOpacity>
-      </View>
-    
+    </Stack.Navigator>
   );
 }
-
-
-
-
-  
 
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#000'
+    backgroundColor: '#000',
   },
   logoContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    alignContent: 'center'
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20
-  },
-  input: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    padding: 10,
-    marginBottom: 20
-  },
-  socialLoginContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 20
-  },
-  socialLoginButton: {
-    backgroundColor: '#007bff',
-    padding: 10,
-    borderRadius: 10
+    alignContent: 'center',
   },
   userNameContainer: {
     borderColor: '#262626',
@@ -190,11 +146,11 @@ const Styles = StyleSheet.create({
     marginStart: 20,
     marginEnd: 20,
     marginTop: 20,
-    marginBottom: 20
+    marginBottom: 20,
   },
   userNameInput: {
     marginStart: 10,
-    color: 'white'
+    color: 'white',
   },
   passwordContainer: {
     borderColor: '#262626',
@@ -206,15 +162,15 @@ const Styles = StyleSheet.create({
     marginStart: 20,
     marginEnd: 20,
     backgroundColor: colors.loginInputBackground,
-    marginBottom: 20
+    marginBottom: 20,
   },
   passwordInput: {marginStart: 10, color: 'white'},
   forgotPasswordContainer: {
     alignItems: 'flex-end',
-    marginEnd: 20
+    marginEnd: 20,
   },
   forgotPasswordText: {
-    color: '#0088f8'
+    color: '#0088f8',
   },
   loginContainer: {
     alignItems: 'center',
@@ -224,10 +180,9 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
     marginStart: 20,
     marginEnd: 20,
-    borderRadius: 5
+    borderRadius: 5,
   },
   loginText: {
-    color: '#fff'
+    color: '#fff',
   },
 });
-  
