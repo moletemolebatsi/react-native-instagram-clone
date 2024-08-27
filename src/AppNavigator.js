@@ -9,22 +9,23 @@ import {
   Image,
   StatusBar,
 } from 'react-native';
-import palette from './res/palette';
+import palette from 'res/palette';
 import TabNavigator from './containers/main/TabNavigator';
 import MainNavigator from './containers/main/MainNavigator';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import images from './res/images';
+import images from 'res/images';
 import colors from './res/colors';
 
 StatusBar.setBarStyle('light-content');
 
 export default function AppNavigator() {
-   
+  const [validate, setValidate] = React.useState(false); //giriş yapılınca geri geri gelmeyi deaktif etmek için kullandık
   function LoginScreen() {
-    
+    const _signInAsync = async () => {
+      setValidate(true);
+    };
     return (
-
-   <View style={Styles.container}>
+      <View style={Styles.container}>
         <View style={Styles.logoContainer}>
           <Image source={images.logo} style={{height: 70, width: 200}} />
         </View>
@@ -101,10 +102,26 @@ export default function AppNavigator() {
             <Text style={{color: '#008bef'}}> Sign Up.</Text>
           </TouchableOpacity>
         </View>
-      </View> 
+      </View>
     );
   }
-  
+  const Stack = createStackNavigator();
+  return validate ? (
+    <MainNavigator />
+  ) : (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{
+          headerStyle: {backgroundColor: '#000'},
+          headerTintColor: '#fff',
+          headerTransparent: true,
+          title: '',
+        }}
+      />
+    </Stack.Navigator>
+  );
 }
 
 const Styles = StyleSheet.create({
@@ -169,3 +186,4 @@ const Styles = StyleSheet.create({
     color: '#fff',
   },
 });
+  
