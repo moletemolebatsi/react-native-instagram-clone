@@ -7,18 +7,12 @@ import {
   Image,
 } from 'react-native';
 import React from 'react';
-import images from '../../res/images';
+import images from 'res/images';
 
-export default function LoginScreen({_signInAsync}) {
+export default function LoginScreen() {
   return (
     <View style={Styles.container}>
-      <View style={Styles.logoContainer}>
-        <Image
-          source={images.logoBlack}
-          style={{height: 70, resizeMode: 'contain'}}
-        />
-      </View>
-
+      
     </View>
   );
 }
