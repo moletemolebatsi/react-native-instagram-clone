@@ -110,7 +110,7 @@ export default function AppNavigator() {
     <MainNavigator />
   ) : (
     <View style={Styles.container}>
-
+<Text style={Styles.userNameInput}>zhellogggg</Text>
     </View>
     
   );
