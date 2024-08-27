@@ -8,7 +8,9 @@ import {
   StyleSheet,
   Image,
   StatusBar,
+  TouchableOpacity
 } from 'react-native';
+import { FontAwesome5 } from '@expo/vector-icons';
 import palette from './res/palette';
 import TabNavigator from './containers/main/TabNavigator';
 import MainNavigator from './containers/main/MainNavigator';
@@ -110,9 +112,41 @@ export default function AppNavigator() {
     <MainNavigator />
   ) : (
     <View style={Styles.container}>
-<Text style={Styles.userNameInput}>zhellogggg</Text>
-    </View>
+
+
+  
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        value={email}
+        onChangeText={(text) => setEmail(text)}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        value={password}
+        onChangeText={(text) => setPassword(text)}
+        secureTextEntry
+      />
+      <Button title="Login" onPress={handleLogin} />
+      <View style={styles.socialLoginContainer}>
+        <TouchableOpacity style={styles.socialLoginButton}>
+          <FontAwesome5 name="facebook" size={24} color="#fff" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.socialLoginButton}>
+          <FontAwesome5 name="google" size={24} color="#fff" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.socialLoginButton}>
+          <FontAwesome5 name="twitter" size={24} color="#fff" />
+        </TouchableOpacity>
+      </View>
     
+  );
+};
+
+
+
+
   );
 }
 
@@ -126,6 +160,28 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    padding: 10,
+    marginBottom: 20,
+  },
+  socialLoginContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 20,
+  },
+  socialLoginButton: {
+    backgroundColor: '#007bff',
+    padding: 10,
+    borderRadius: 10,
   },
   userNameContainer: {
     borderColor: '#262626',
