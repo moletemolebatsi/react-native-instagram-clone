@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import images from '../../res/images';
 
-export default function LoginScreen() {
+export default function LoginScreen({_signInAsync}) {
   return (
     <View style={Styles.container}>
       <Text style={Styles.forgotPasswordText}>Hello!</Text>
