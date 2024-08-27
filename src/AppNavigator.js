@@ -124,7 +124,7 @@ export default function AppNavigator() {
         placeholder="Password"
         
       />
-      <Button title="Login" onPress={handleLogin} />
+      <Button title="Login" />
       </View>
   );
 }
